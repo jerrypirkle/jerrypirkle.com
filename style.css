@@ -1,0 +1,12 @@
+body {
+  background-color:#282828;
+  color:#33FF33;
+}
+a:link {
+  color: #FFB000;
+}
+a:visited {
+  color: #FFCC00;
+}
+
+/*Color Choices: https://superuser.com/questions/361297/what-colour-is-the-dark-green-on-old-fashioned-green-screen-computer-displays*/
