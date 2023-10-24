@@ -1,12 +1,64 @@
 body {
-  background-color:#282828;
-  color:#33FF33;
+  background-color: black;
+  background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  padding: 2rem;
+  color: white;
+  text-shadow: 0 0 5px #C8C8C8;
+    font-family: clacon, serif;
+    font-size: 1.5rem;
+
 }
-a:link {
-  color: #FFB000;
-}
-a:visited {
-  color: #FFCC00;
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 2px);
+  pointer-events: none;
 }
 
-/*Color Choices: https://superuser.com/questions/361297/what-colour-is-the-dark-green-on-old-fashioned-green-screen-computer-displays*/
+@font-face {
+    font-family: clacon;
+    src: url(clacon2.ttf);
+}
+a:link, a:visited {
+    color: white;
+    text-decoration: underline;
+  }
+
+p#shell {
+    display:inline;
+}
+
+p#blink {
+            display:inline;
+            color: white;
+            animation: animate
+                1.2s linear infinite;
+        }
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+::selection {
+  background: #0080FF;
+  text-shadow: none;
+}
+
+pre {
+  margin: 0;
+}
